@@ -80,7 +80,7 @@ export default function ImageBuilderConfig({ layers, config, updateConfig }: Pro
             config.push({ layerName: layerConfig.name, number: layerConfig.number });
         }
         updateConfig(config);
-    }, [updateConfig, state.configs]);
+    }, [state.configs]);
 
     return (
         <div>
